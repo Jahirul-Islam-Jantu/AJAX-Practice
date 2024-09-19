@@ -1,5 +1,5 @@
 function getRequest(){
-    const url = 'https://jsonplaceholder.typicode.com/users'
+    const url = 'http://164.68.107.70:6060/api/v1/ReadProduct'
     const requestOption = {method: 'GET'};
 
 
@@ -7,29 +7,14 @@ function getRequest(){
 }
 
 function postRequest(){
-    const url = 'https://jsonplaceholder.typicode.com/users'
+    const url = 'http://164.68.107.70:6060/api/v1/CreateProduct'
     const bodyData = {
-        "id": 13,
-        name: "Jahirul Islam",
-        username: "unchangedJahir",
-        email: "jahirul@gmail.com",
-        address: {
-            street: "49",
-            suite: "D",
-            city: "Narayangonj",
-            zipcode: "1451",
-            geo: {
-                lat: "-37.3159",
-                lng: "81.1496"
-            }
-        },
-        phone: "+8801773427087",
-        website: "jahirul-learn.org",
-        company: {
-            name: "Hope Agency",
-            catchPhrase: "Multi-layered client-server neural-net",
-            bs: "harness real-time e-markets"
-        }
+        img: "123",
+        ProductCode: "123",
+        ProductName: "Test Product",
+        Qty: "Test Qty",
+        TotalPrice: "123",
+        UnitPrice: "123",
     }
     const requestOption = {method: 'POST'},
         headers  = {'Accept': "application/json",'Content-Type': 'application/json'},
