@@ -1,5 +1,7 @@
-const axios = <script src="./axios.min.js"></script>
-async function createData(){
+
+
+async function CreateData(){
+
     let productName = document.querySelector("#productName").value;
     let productCode = document.querySelector("#productCode").value;
     let productImg = document.querySelector("#productImg").value;
@@ -7,11 +9,12 @@ async function createData(){
     let productQnt = document.querySelector("#productQnt").value;
     let productTotal = document.querySelector("#productTotal").value;
 
-    let url = 'http://164.68.107.70:6060/api/v1/CreateProduct'
+    let URL = "http://164.68.107.70:6060/api/v1/CreateProduct"
     document.querySelector("#loader").classList.remove("d-none")
 
-    let res = await axios.post(url, {
-        img: productImg,
+
+    let res = await axios.post(URL, {
+        Img: productImg,
         ProductCode: productCode,
         ProductName: productName,
         Qty: productQnt,
