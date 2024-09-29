@@ -1,6 +1,6 @@
 
 
-async function CreateData(){
+async function CreateData() {
 
     let productName = document.querySelector("#productName").value;
     let productCode = document.querySelector("#productCode").value;
@@ -10,7 +10,8 @@ async function CreateData(){
     let productTotal = document.querySelector("#productTotal").value;
 
     let URL = "http://164.68.107.70:6060/api/v1/CreateProduct"
-    document.querySelector("#loader").classList.remove("d-none")
+    document.querySelector("#loader").classList.remove("visually-hidden")
+
 
 
     let res = await axios.post(URL, {
@@ -21,10 +22,12 @@ async function CreateData(){
         TotalPrice: productTotal,
         UnitPrice: unitPrice,
     })
-    document.querySelector("#loader").classList.add("d-none")
+
+    document.querySelector("#loader").classList.add("visually-hidden")
+
 
     if (res.status === 200) {
-        window.location = "index.html"
+        alert("Product successfully created!");
     }else {
         alert("error creating product")
     }

@@ -5,37 +5,48 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/milligram.css">
-    <script src="./assets/js/create.js" defer></script>
+
     <title>Crud Project</title>
 </head>
 <body>
+
+
+
     <div class="container">
         <div class="row">
             <div class="column">
-                <div id="loader" class="loading d-none">
 
-                </div>
+                        <h1>Create Product</h1>
+                        <label for="productName">Product Name</label>
+                        <input id="productName" type="text">
+                        <label for="productCode">Product Code</label>
+                        <input id="productCode" type="text">
+                        <label for="productImg">Product Image</label>
+                        <input id="productImg" type="text">
+                        <label for="unitPrice">Unit Price</label>
+                        <input id="unitPrice" type="text">
+                        <label for="productQnt">Product Quantity</label>
+                        <input id="productQnt" type="text">
+                        <label for="productTotal">Product Total</label>
+                        <input id="productTotal" type="text">
+                        <button type="submit" onclick="CreateData()">Submit</button>
+                        <div id="loader" class="visually-hidden" role="status">
+                            <span class="spinner-grow text-danger"></span>
+                            <span class="spinner-grow text-dark"></span>
+                            <span class="spinner-grow text-info"></span>
+                            <span class="spinner-grow text-body"></span>
+                            <span class="spinner-grow text-secondary"></span>
+                        </div>
 
-                <h1>Create Product</h1>
-                <label for="productName">Product Name</label>
-                <input id="productName" type="text">
-                <label for="productCode">Product Code</label>
-                <input id="productCode" type="text">
-                <label for="productImg">Product Image</label>
-                <input id="productImg" type="text">
-                <label for="unitPrice">Unit Price</label>
-                <input id="unitPrice" type="text">
-                <label for="productQnt">Product Quantity</label>
-                <input id="productQnt" type="text">
-                <label for="productTotal">Product Total</label>
-                <input id="productTotal" type="text">
-                <button type="submit" onclick="CreateData()">Submit</button>
+
             </div>
         </div>
     </div>
 
     <script src="./assets/js/axios.min.js" defer></script>
+    <script src="./assets/js/bootstrap.min.js" defer></script>
+    <script src="./assets/js/create.js" defer></script>
 </body>
 </html>
