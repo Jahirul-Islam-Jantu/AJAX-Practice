@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-familY: "BIZ UDMincho Medium";
+}
+.container{
+    width: 100%;
+}
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+button{
+
+    border: 1px solid goldenrod;
+    outline: none;
+    color: goldenrod;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+
+}
+button:hover{
+
+color: white;
+    background-color: goldenrod;
+
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    padding:10px;
+    border-radius: 10px;
+    background: transparent;
+
+}
+a:hover{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    padding:10px;
+    border-radius: 10px;
+    background: goldenrod;
+    cursor: pointer;
+    color: #ffffff;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    gap: 1rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+.navbar ul li {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
