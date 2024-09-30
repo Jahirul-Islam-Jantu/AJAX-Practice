@@ -27,7 +27,7 @@ async function CreateData() {
 
 
     if (res.status === 200) {
-        alert("Product successfully created!");
+        window.location = "showProduct.js";
     }else {
         alert("error creating product")
     }

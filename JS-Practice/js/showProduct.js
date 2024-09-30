@@ -1,6 +1,5 @@
 
     async function getRequest(){
-        window.location = 'showProduct.js'
     const URL = 'http://164.68.107.70:6060/api/v1/ReadProduct'
         let res = await axios.get(URL);
         if(res.status === 200){
@@ -22,3 +21,16 @@
             alert("error")
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    getRequest();
