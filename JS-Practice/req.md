@@ -5,4 +5,5 @@
     - update.html (update)
     - css/milligram.css
     - JS/ axios
-    - 
+    - Create Product
+    - read Product

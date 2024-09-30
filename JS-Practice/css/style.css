@@ -7,9 +7,6 @@
 body{
     font-familY: "BIZ UDMincho Medium";
 }
-.container{
-    width: 100%;
-}
 h1 {
     color: #2c3e50;
     text-align: center;
@@ -65,7 +62,8 @@ a:hover{
 .navbar{
     display: flex;
     justify-content: space-around;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 .navbar ul li {
     display: flex;
