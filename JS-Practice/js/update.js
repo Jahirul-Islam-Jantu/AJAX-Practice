@@ -23,7 +23,7 @@ async function fillExistingProduct(){
 }
 
 async function UpdateData(){
-    let productId = document.querySelector("#productId").value = items['_id'];
+    let productId = document.querySelector("#productId").value
     let productName =document.querySelector("#productName").value
     let productCode =document.querySelector("#productCode").value
     let productImage =document.querySelector("#productImg").value
@@ -45,7 +45,7 @@ async function UpdateData(){
     document.querySelector("#loader").classList.add("d-none")
     if (res.status === 200){
         alert("Successfully updated")
-        window.location = "showProduct.js"
+        window.location = "showProduct.html"
     }else{
         alert("error updating product")
     }
