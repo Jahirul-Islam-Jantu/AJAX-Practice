@@ -59,16 +59,10 @@ a:hover{
     height: 60vh;
     gap: 1rem;
 }
-.show-button{
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    /*height: 60vh;*/
-    /*gap: 1rem;*/
-}
+
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 2rem;
     margin-bottom: 3rem;
 }

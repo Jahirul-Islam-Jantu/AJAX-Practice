@@ -32,4 +32,10 @@ async function deleteItem(id) {
   }
 }
 
+function updateItem(id) {
+  window.location =  `update.html?id=${id}`
+}
+
+
+
 getRequest();

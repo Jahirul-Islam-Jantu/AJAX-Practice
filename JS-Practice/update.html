@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0,
+    maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/milligram.css">
+    <script src="./js/axios.min.js" defer></script>
+    <script src="./js/update.js" defer></script>
+
+    <title>CRUD Practice</title>
+</head>
+<body>
+<div id="loader" class="loading d-none">
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <section class=" container-fluid navbar">
+                <div class="navbar-brand">
+                    <h2><a href="./index.html">AJAX Practice Project</a></h2>
+                </div>
+                <div class="nav-sec">
+                    <ul class="nav-item">
+                        <li class="nav-link d-flex gap-3">
+                            <a href="./index.html"> Home </a>
+                            <a href="./create.html"> Create Product </a>
+                            <a href="./showProduct.html"> Show Product </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <h2 class="text-center text-bg-warning p-2 rounded-3 " >Update Your Product</h2>
+            <label for="productId">Product ID</label>
+            <input id="productId" type="text">
+            <label for="productName">Product Name</label>
+            <input id="productName" type="text">
+            <label for="productCode">Product Code</label>
+            <input id="productCode" type="text">
+            <label for="productImg">Product Image</label>
+            <input id="productImg" type="text">
+            <label for="unitPrice">Unit Price</label>
+            <input id="unitPrice" type="text">
+            <label for="productQnt">Product Quantity</label>
+            <input id="productQnt" type="text">
+            <label for="productTotal">Product Total</label>
+            <input id="productTotal" type="text">
+            <button type="submit" onclick="CreateData()">Submit</button>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
