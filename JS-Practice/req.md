@@ -6,4 +6,4 @@
     - css/milligram.css
     - JS/ axios
     - Create Product
-    - read Product
+    - read Product, delete product
