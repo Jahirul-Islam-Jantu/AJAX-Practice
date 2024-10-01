@@ -52,12 +52,19 @@ a:hover{
     cursor: pointer;
     color: #ffffff;
 }
-.btn{
+.btn-middle{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60vh;
     gap: 1rem;
+}
+.show-button{
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*height: 60vh;*/
+    /*gap: 1rem;*/
 }
 .navbar{
     display: flex;
